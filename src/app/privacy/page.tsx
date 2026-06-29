@@ -24,11 +24,12 @@ export default function PrivacyPage() {
             <section>
               <p className="text-base leading-relaxed">
                 TezKaam respects user privacy. We collect only the information
-                necessary to respond to inquiries, provide services, manage
-                client communication, and deliver service-related notifications.
-                We do not sell personal information. Email addresses are used
-                only for legitimate business communication, support, account
-                notifications, project updates, and service-related messages.
+                necessary to provide our team management product, respond to
+                inquiries, manage workspace communication, and deliver
+                service-related notifications. We do not sell personal
+                information. Email addresses are used only for legitimate
+                product communication, support, account notifications,
+                workspace updates, and service-related messages.
               </p>
             </section>
 
@@ -38,7 +39,7 @@ export default function PrivacyPage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed">
                 We may collect the following types of information when you
-                contact us or use our services:
+                contact us or use the TezKaam product:
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed">
                 <li>
@@ -69,8 +70,8 @@ export default function PrivacyPage() {
               </p>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed">
                 <li>To respond to inquiries and contact form submissions</li>
-                <li>To provide digital services and client support</li>
-                <li>To manage projects and communicate with clients</li>
+                <li>To provide the TezKaam team management platform</li>
+                <li>To manage workspaces, teams, and tasks</li>
                 <li>
                   To send service-related notifications, updates, and
                   transactional messages

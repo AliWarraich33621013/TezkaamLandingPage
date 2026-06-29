@@ -5,13 +5,13 @@ const cards = [
     icon: Eye,
     title: "Vision",
     content:
-      "To become a trusted digital solutions company known for building reliable, scalable, and impactful technology for businesses and communities.",
+      "To become the most trusted team management platform for small and medium businesses across Pakistan, helping teams work smarter every day.",
   },
   {
     icon: Compass,
     title: "Mission",
     content:
-      "To empower businesses with practical, secure, and efficient digital solutions that simplify operations, improve communication, and support sustainable growth.",
+      "To give Pakistani SMEs a simple, reliable product that makes it easy to organize teams, assign work, and grow with confidence.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function VisionMission() {
             Vision & Mission
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Our direction and purpose guide every project we deliver.
+            Our purpose drives every feature we build into the TezKaam product.
           </p>
         </div>
 

@@ -1,22 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const LOGIN_URL = "https://staging.tezkaam.tech/login";
+const SIGNUP_URL = "https://staging.tezkaam.tech/register";
+
 const quickLinks = [
   { label: "Home", href: "/#home" },
-  { label: "What We Do", href: "/#what-we-do" },
+  { label: "Features", href: "/#features" },
   { label: "Vision & Mission", href: "/#vision-mission" },
   { label: "Why TezKaam", href: "/#why-tezkaam" },
   { label: "Email Use", href: "/#email-use" },
   { label: "Contact", href: "/#contact" },
 ];
 
-const serviceLinks = [
-  "Web Development",
-  "Business Automation",
-  "Cloud Solutions",
-  "UI/UX Design",
-  "Digital Strategy",
-  "Support & Maintenance",
+const featureLinks = [
+  "Company Workspaces",
+  "Team Management",
+  "Task Tracking",
+  "Role-Based Access",
+  "Activity Overview",
+  "Account Notifications",
 ];
 
 export default function Footer() {
@@ -35,8 +38,9 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
-              TezKaam is a digital solutions company helping businesses design,
-              build, and scale reliable technology products and platforms.
+              TezKaam is a team management product built for small and medium
+              businesses in Pakistan. Organize your company, manage your team,
+              and track work in one place.
             </p>
           </div>
 
@@ -60,16 +64,16 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Services
+              Features
             </h3>
             <ul className="mt-4 space-y-2">
-              {serviceLinks.map((service) => (
-                <li key={service}>
+              {featureLinks.map((feature) => (
+                <li key={feature}>
                   <Link
-                    href="/#what-we-do"
+                    href="/#features"
                     className="text-sm text-gray-400 transition-colors hover:text-[#ff7900]"
                   >
-                    {service}
+                    {feature}
                   </Link>
                 </li>
               ))}
@@ -95,6 +99,22 @@ export default function Footer() {
                   className="text-sm text-gray-400 transition-colors hover:text-[#ff7900]"
                 >
                   tezkaam.tech
+                </a>
+              </li>
+              <li>
+                <a
+                  href={LOGIN_URL}
+                  className="text-sm text-gray-400 transition-colors hover:text-[#ff7900]"
+                >
+                  Login
+                </a>
+              </li>
+              <li>
+                <a
+                  href={SIGNUP_URL}
+                  className="text-sm text-gray-400 transition-colors hover:text-[#ff7900]"
+                >
+                  Sign Up
                 </a>
               </li>
               <li>

@@ -22,8 +22,8 @@ export default function Contact() {
             Contact TezKaam
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Reach out to discuss your project, ask a question, or learn more
-            about our services.
+            Have a question about TezKaam? Reach out and our team will get back
+            to you.
           </p>
         </div>
 

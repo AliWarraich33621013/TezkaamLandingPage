@@ -1,25 +1,25 @@
-import { Shield, Zap, TrendingUp, Target } from "lucide-react";
+import { Shield, Zap, Building2, MapPin } from "lucide-react";
 
 const items = [
   {
     icon: Shield,
     title: "Secure",
-    description: "Security-first development practices for reliable digital products.",
+    description: "Your company data and team accounts are protected with secure access controls.",
   },
   {
     icon: Zap,
-    title: "Reliable",
-    description: "Stable systems built for consistent performance and uptime.",
+    title: "Easy to Use",
+    description: "A clean interface designed so teams can get started quickly without training.",
   },
   {
-    icon: TrendingUp,
-    title: "Scalable",
-    description: "Architecture designed to grow with your business needs.",
+    icon: Building2,
+    title: "Built for SMEs",
+    description: "Practical tools sized for small and medium businesses, not enterprise complexity.",
   },
   {
-    icon: Target,
-    title: "Business-Focused",
-    description: "Solutions aligned with real operational and commercial goals.",
+    icon: MapPin,
+    title: "Made for Pakistan",
+    description: "Built with the needs of Pakistani businesses and teams in mind.",
   },
 ];
 

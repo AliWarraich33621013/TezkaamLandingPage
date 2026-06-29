@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
-import Services from "@/components/Services";
+import Features from "@/components/Features";
 import VisionMission from "@/components/VisionMission";
 import WhyTezKaam from "@/components/WhyTezKaam";
 import EmailPolicy from "@/components/EmailPolicy";
@@ -16,7 +16,7 @@ export default function Home() {
       <main id="main-content">
         <Hero />
         <TrustStrip />
-        <Services />
+        <Features />
         <VisionMission />
         <WhyTezKaam />
         <EmailPolicy />

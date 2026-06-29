@@ -5,9 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+const LOGIN_URL = "https://staging.tezkaam.tech/login";
+const SIGNUP_URL = "https://staging.tezkaam.tech/register";
+
 const navLinks = [
   { label: "Home", href: "/#home" },
-  { label: "What We Do", href: "/#what-we-do" },
+  { label: "Features", href: "/#features" },
   { label: "Vision & Mission", href: "/#vision-mission" },
   { label: "Why TezKaam", href: "/#why-tezkaam" },
   { label: "Email Use", href: "/#email-use" },
@@ -19,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 sm:py-5 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center" aria-label="TezKaam home">
           <Image
             src="/TezKaamLogo.png"
@@ -32,7 +35,7 @@ export default function Header() {
         </Link>
 
         <nav
-          className="hidden items-center gap-6 lg:flex"
+          className="hidden items-center gap-5 xl:flex"
           aria-label="Main navigation"
         >
           {navLinks.map((link) => (
@@ -46,13 +49,19 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Link
-            href="/#contact"
+        <div className="hidden items-center gap-3 lg:flex">
+          <a
+            href={LOGIN_URL}
+            className="btn-outline inline-flex rounded-lg px-5 py-2.5 text-sm font-semibold text-white"
+          >
+            Login
+          </a>
+          <a
+            href={SIGNUP_URL}
             className="btn-orange inline-flex rounded-lg px-5 py-2.5 text-sm font-semibold text-white"
           >
-            Get in Touch
-          </Link>
+            Sign Up
+          </a>
         </div>
 
         <button
@@ -84,13 +93,20 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/#contact"
+            <a
+              href={LOGIN_URL}
+              className="btn-outline mt-2 inline-flex justify-center rounded-lg px-5 py-2.5 text-sm font-semibold text-white"
+              onClick={() => setMobileOpen(false)}
+            >
+              Login
+            </a>
+            <a
+              href={SIGNUP_URL}
               className="btn-orange mt-2 inline-flex justify-center rounded-lg px-5 py-2.5 text-sm font-semibold text-white"
               onClick={() => setMobileOpen(false)}
             >
-              Get in Touch
-            </Link>
+              Sign Up
+            </a>
           </div>
         </nav>
       )}

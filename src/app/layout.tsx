@@ -17,20 +17,20 @@ const siteUrl = "https://tezkaam.tech";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "TezKaam | Digital Solutions for Growing Businesses",
+    default: "TezKaam | Team Management Software for Pakistani SMEs",
     template: "%s | TezKaam",
   },
   description:
-    "TezKaam helps businesses design, build, and scale reliable digital products, web platforms, automation systems, and cloud-powered solutions.",
+    "TezKaam is a team management platform for small and medium businesses in Pakistan. Organize your company, manage your team, assign tasks, and stay aligned.",
   keywords: [
     "TezKaam",
-    "digital solutions",
-    "web development",
-    "business automation",
-    "cloud solutions",
-    "UI/UX design",
-    "digital strategy",
-    "software development",
+    "team management",
+    "SME software",
+    "Pakistan",
+    "task management",
+    "workspace",
+    "team collaboration",
+    "small business software",
   ],
   authors: [{ name: "TezKaam" }],
   creator: "TezKaam",
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "TezKaam",
-    title: "TezKaam | Digital Solutions for Growing Businesses",
+    title: "TezKaam | Team Management Software for Pakistani SMEs",
     description:
-      "TezKaam helps businesses design, build, and scale reliable digital products, web platforms, automation systems, and cloud-powered solutions.",
+      "TezKaam is a team management platform for small and medium businesses in Pakistan. Organize your company, manage your team, assign tasks, and stay aligned.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TezKaam | Digital Solutions for Growing Businesses",
+    title: "TezKaam | Team Management Software for Pakistani SMEs",
     description:
-      "TezKaam helps businesses design, build, and scale reliable digital products, web platforms, automation systems, and cloud-powered solutions.",
+      "TezKaam is a team management platform for small and medium businesses in Pakistan. Organize your company, manage your team, assign tasks, and stay aligned.",
   },
   robots: {
     index: true,

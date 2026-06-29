@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "TezKaam Terms of Service — terms and conditions for using our digital services and website.",
+    "TezKaam Terms of Service — terms and conditions for using our team management product and website.",
 };
 
 export default function TermsPage() {
@@ -23,22 +23,22 @@ export default function TermsPage() {
           <div className="prose-custom mt-10 space-y-8 text-gray-300">
             <section>
               <p className="text-base leading-relaxed">
-                By using TezKaam services or contacting us through this website,
-                users agree to communicate honestly, provide accurate
-                information, and use our services for lawful business purposes.
-                TezKaam provides digital services, software support, and
-                technology consultation according to agreed project terms.
+                By using the TezKaam product or contacting us through this
+                website, users agree to communicate honestly, provide accurate
+                information, and use our platform for lawful business purposes.
+                TezKaam provides team management software and product support
+                according to applicable terms.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white">Our Services</h2>
+              <h2 className="text-2xl font-semibold text-white">Our Product</h2>
               <p className="mt-4 text-base leading-relaxed">
-                TezKaam offers digital solutions including web development,
-                business automation, cloud solutions, UI/UX design, digital
-                strategy, and ongoing support. Specific deliverables, timelines,
-                and terms are defined in individual project agreements or
-                statements of work between TezKaam and the client.
+                TezKaam is a team management platform for small and medium
+                businesses. The product includes company workspaces, team member
+                management, task assignment and tracking, role-based access, and
+                related features. Use of the platform is subject to these terms
+                and any applicable account agreements.
               </p>
             </section>
 

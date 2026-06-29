@@ -1,12 +1,12 @@
 import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
-  "Client-centric approach",
-  "Transparent communication",
-  "Secure and reliable development",
-  "Scalable solutions",
-  "Practical business focus",
-  "Long-term support",
+  "Purpose-built for Pakistani SMEs",
+  "Simple team and task management",
+  "No complicated setup or training",
+  "Secure workspace for your company",
+  "Scales as your team grows",
+  "Reliable product support",
 ];
 
 export default function WhyTezKaam() {
@@ -22,14 +22,14 @@ export default function WhyTezKaam() {
               Why Choose TezKaam
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-400">
-              We work with businesses that need dependable technology partners —
-              teams who value clarity, quality, and long-term collaboration over
-              quick fixes.
+              Pakistani SMEs need tools that are practical, affordable, and easy
+              for real teams to adopt — not bloated software built for large
+              corporations.
             </p>
             <p className="mt-4 text-base leading-relaxed text-gray-400">
-              From startups to established organizations, TezKaam serves clients
-              who want practical digital solutions built with professionalism
-              and care.
+              TezKaam is a product designed for business owners, managers, and
+              teams who want a straightforward way to coordinate work and stay
+              organized.
             </p>
           </div>
 

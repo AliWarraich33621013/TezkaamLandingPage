@@ -10,22 +10,22 @@ const emailTypes = [
   {
     icon: Bell,
     title: "Transactional Notifications",
-    description: "Account confirmations, password resets, and system alerts.",
+    description: "Account confirmations, password resets, and login link emails.",
   },
   {
     icon: MessageSquare,
-    title: "Client & Project Communication",
-    description: "Updates, deliverables, and project-related correspondence.",
+    title: "Team & Workspace Updates",
+    description: "Notifications about tasks, assignments, and workspace activity.",
   },
   {
     icon: Headphones,
     title: "Support Responses",
-    description: "Replies to client inquiries and technical support requests.",
+    description: "Replies to your product support and account inquiries.",
   },
   {
     icon: Megaphone,
-    title: "Service Updates",
-    description: "Important announcements about services and platform changes.",
+    title: "Product Updates",
+    description: "Important announcements about platform changes and features.",
   },
   {
     icon: ShieldAlert,
@@ -46,11 +46,11 @@ export default function EmailPolicy() {
             How TezKaam Uses Email
           </h2>
           <p className="mt-6 text-base leading-relaxed text-gray-300 sm:text-lg">
-            TezKaam uses email only for legitimate business and service-related
-            communication. This may include account notifications, project
-            updates, client support responses, service announcements, system
-            alerts, and important transactional messages. We do not send
-            unsolicited emails, purchased-list campaigns, or spam.
+            TezKaam uses email only for legitimate product and service-related
+            communication. This may include account notifications, workspace
+            updates, support responses, product announcements, system alerts, and
+            important transactional messages. We do not send unsolicited emails,
+            purchased-list campaigns, or spam.
           </p>
         </div>
 
