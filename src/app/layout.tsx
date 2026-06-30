@@ -1,53 +1,41 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const siteUrl = "https://tezkaam.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "TezKaam | Team Management Software for Pakistani SMEs",
-    template: "%s | TezKaam",
+    default: "tezkaam — the workspace that keeps up",
+    template: "%s | tezkaam",
   },
   description:
-    "TezKaam is a team management platform for small and medium businesses in Pakistan. Organize your company, manage your team, assign tasks, and stay aligned.",
+    "Projects, tasks, calendar, reports, team and notes in one fast, uncluttered workspace. tez means fast. kaam means work.",
   keywords: [
-    "TezKaam",
+    "tezkaam",
     "team management",
-    "SME software",
-    "Pakistan",
-    "task management",
     "workspace",
-    "team collaboration",
-    "small business software",
+    "tasks",
+    "Pakistan",
+    "SME",
+    "project management",
   ],
-  authors: [{ name: "TezKaam" }],
-  creator: "TezKaam",
+  authors: [{ name: "tezkaam" }],
+  creator: "tezkaam",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "TezKaam",
-    title: "TezKaam | Team Management Software for Pakistani SMEs",
+    siteName: "tezkaam",
+    title: "tezkaam — the workspace that keeps up",
     description:
-      "TezKaam is a team management platform for small and medium businesses in Pakistan. Organize your company, manage your team, assign tasks, and stay aligned.",
+      "Projects, tasks, calendar, reports, team and notes in one fast, uncluttered workspace. tez means fast. kaam means work.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TezKaam | Team Management Software for Pakistani SMEs",
+    title: "tezkaam — the workspace that keeps up",
     description:
-      "TezKaam is a team management platform for small and medium businesses in Pakistan. Organize your company, manage your team, assign tasks, and stay aligned.",
+      "Projects, tasks, calendar, reports, team and notes in one fast, uncluttered workspace. tez means fast. kaam means work.",
   },
   robots: {
     index: true,
@@ -61,11 +49,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
-    >
-      <body className="min-h-full bg-[#0a0a0a] text-white">
+    <html lang="en" className="js">
+      <head>
+        <link rel="preconnect" href="https://api.fontshare.com" crossOrigin="" />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700,500&f[]=general-sans@400,500,600&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

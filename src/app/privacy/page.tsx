@@ -1,28 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import LegalNav from "@/components/landing/LegalNav";
+import LegalFooter from "@/components/landing/LegalFooter";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "TezKaam Privacy Policy — how we collect, use, and protect your information, including email communication practices.",
+    "tezkaam Privacy Policy — how we collect, use, and protect your information, including email communication practices.",
 };
 
 export default function PrivacyPage() {
   return (
     <>
-      <Header />
-      <main id="main-content" className="px-4 py-16 sm:px-6 lg:px-8">
-        <article className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight text-white">
-            Privacy Policy
-          </h1>
-          <p className="mt-4 text-sm text-gray-400">Last updated: June 2026</p>
+      <LegalNav />
+      <main id="main-content" className="legal-page">
+        <article className="wrap mx-auto max-w-3xl">
+          <h1>Privacy Policy</h1>
+          <p className="legal-meta">Last updated: June 2026</p>
 
-          <div className="prose-custom mt-10 space-y-8 text-gray-300">
+          <div className="mt-10 space-y-8">
             <section>
-              <p className="text-base leading-relaxed">
+              <p>
                 TezKaam respects user privacy. We collect only the information
                 necessary to provide our team management product, respond to
                 inquiries, manage workspace communication, and deliver
@@ -34,14 +32,12 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white">
-                What Data We Collect
-              </h2>
-              <p className="mt-4 text-base leading-relaxed">
+              <h2>What Data We Collect</h2>
+              <p className="mt-4">
                 We may collect the following types of information when you
                 contact us or use the TezKaam product:
               </p>
-              <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed">
+              <ul>
                 <li>
                   Contact information such as your name, email address, and
                   company name
@@ -62,13 +58,11 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white">
-                Why We Collect Data
-              </h2>
-              <p className="mt-4 text-base leading-relaxed">
+              <h2>Why We Collect Data</h2>
+              <p className="mt-4">
                 We collect and use information for the following purposes:
               </p>
-              <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed">
+              <ul>
                 <li>To respond to inquiries and contact form submissions</li>
                 <li>To provide the TezKaam team management platform</li>
                 <li>To manage workspaces, teams, and tasks</li>
@@ -81,24 +75,20 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white">
-                How We Use Email
-              </h2>
-              <p className="mt-4 text-base leading-relaxed">
+              <h2>How We Use Email</h2>
+              <p className="mt-4">
                 TezKaam uses email exclusively for legitimate business and
                 service-related communication. This includes account
-                notifications, project updates, client support responses, service
-                announcements, system alerts, and important transactional
+                notifications, project updates, client support responses,
+                service announcements, system alerts, and important transactional
                 messages. We do not send unsolicited marketing emails,
                 purchased-list campaigns, or spam.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white">
-                Data Sharing and Sales
-              </h2>
-              <p className="mt-4 text-base leading-relaxed">
+              <h2>Data Sharing and Sales</h2>
+              <p className="mt-4">
                 We do not sell, rent, or trade personal information to third
                 parties. Information may be shared only when necessary to
                 deliver agreed services, comply with legal obligations, or
@@ -107,29 +97,21 @@ export default function PrivacyPage() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white">
-                How to Contact Us
-              </h2>
-              <p className="mt-4 text-base leading-relaxed">
+              <h2>How to Contact Us</h2>
+              <p className="mt-4">
                 If you have questions about this Privacy Policy, your data, or
                 our email practices, please contact us at{" "}
-                <a
-                  href="mailto:notifications@tezkaam.tech"
-                  className="text-[#ff7900] hover:underline"
-                >
+                <a href="mailto:notifications@tezkaam.tech">
                   notifications@tezkaam.tech
                 </a>
                 . You may also visit{" "}
-                <Link href="/#contact" className="text-[#ff7900] hover:underline">
-                  our contact page
-                </Link>
-                .
+                <Link href="/#get">our contact section</Link>.
               </p>
             </section>
           </div>
         </article>
       </main>
-      <Footer />
+      <LegalFooter />
     </>
   );
 }
