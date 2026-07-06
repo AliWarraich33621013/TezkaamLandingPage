@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LOGO_PATH } from "@/lib/constants";
+import { LOGO_PATH, TEZADS_PRODUCT_URL } from "@/lib/constants";
 
 export default function CtaFooter() {
   return (
@@ -51,6 +51,14 @@ export default function CtaFooter() {
               </a>
               <a href="#get" data-cursor>
                 Get access
+              </a>
+              <a
+                href={TEZADS_PRODUCT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor
+              >
+                Product of Tezads
               </a>
               <Link href="/privacy" data-cursor>
                 Privacy

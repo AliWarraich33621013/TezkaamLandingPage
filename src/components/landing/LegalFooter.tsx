@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LOGO_PATH } from "@/lib/constants";
+import { LOGO_PATH, TEZADS_PRODUCT_URL } from "@/lib/constants";
 
 export default function LegalFooter() {
   return (
@@ -20,6 +20,13 @@ export default function LegalFooter() {
           <Link href="/#product">Product</Link>
           <Link href="/#who">Who it&apos;s for</Link>
           <Link href="/#get">Get access</Link>
+          <a
+            href={TEZADS_PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Product of Tezads
+          </a>
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>
         </div>
